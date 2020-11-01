@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kcalculate.R
 import com.example.kcalculate.ui.intro.IntroActivity
+import com.example.kcalculate.utils.AppStartUtil
 
 class SplashActivity : AppCompatActivity() {
 
@@ -17,9 +18,18 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun checkIsFirstTime(){
-        val intent = Intent(this, IntroActivity::class.java)
+        val isFirstTime = AppStartUtil(this).isFirstTimeLaunch
 
-        startActivity(intent)
-        finish()
+        if(isFirstTime){
+            val intent = Intent(this, IntroActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        else{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }
