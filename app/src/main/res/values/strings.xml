@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">KcalCulate</string>
     <string name="btn_finish"><b>Finish</b></string>
+    <string name="menu_news">News</string>
+    <string name="menu_personal_data">Personal Data</string>
+    <string name="menu_recipes">Recipes</string>
+    <string name="language_english">English</string>
+    <string name="language_spanish">Español</string>
+    <string name="notifications">Notifications</string>
+    <string name="log_out">Log out</string>
 </resources>
