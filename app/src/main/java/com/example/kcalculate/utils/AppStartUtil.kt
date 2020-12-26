@@ -5,14 +5,11 @@ import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.core.content.pm.PackageInfoCompat
+import com.example.kcalculate.enums.AppStart
 import com.example.kcalculate.R
 import com.example.kcalculate.utils.Constants.Companion.CLASS_TAG
 import com.example.kcalculate.utils.Constants.Companion.LAST_APP_VERSION
 import com.example.kcalculate.utils.Constants.Companion.PREFS_FILENAME
-
-enum class AppStart{
-    FIRST_TIME, FIRST_TIME_VERSION, NORMAL
-}
 
 class AppStartUtil (private  val context: Context){
 
@@ -43,7 +40,7 @@ class AppStartUtil (private  val context: Context){
         return appStart
     }
 
-    private fun checkAppStart(currentVersionCode: Long, lastVersionCode: Long): AppStart{
+    private fun checkAppStart(currentVersionCode: Long, lastVersionCode: Long): AppStart {
         return when {
             lastVersionCode == -1L -> {
                 AppStart.FIRST_TIME
