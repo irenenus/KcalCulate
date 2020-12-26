@@ -23,10 +23,21 @@
     </style>
 
     <!-- Drawer's Text -->
-    <style name="DrawerTextStyle" >
+    <style name="DrawerTextStyle">
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">@drawable/selector_drawer_item</item>
     </style>
 
+    <!-- Food Data Text -->
+    <style name="FoodDataTitleStyle">
+        <item name="android:fontFamily">@font/baloo</item>
+        <item name="android:textSize">31sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="FoodDataSubtitleStyle">
+        <item name="android:fontFamily">@font/baloo</item>
+        <item name="android:textSize">21sp</item>
+    </style>
 </resources>

@@ -1,6 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="22dp"
+    android:layout_marginEnd="22dp">
+
+    <TextView
+        android:id="@+id/tvToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today"
+        style="@style/FoodDataTitleStyle"
+        />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        style="@style/FoodDataSubtitleStyle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/llNutritionData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llKcalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvKcalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/FoodDataTitleStyle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kcal"
+                android:gravity="center"
+                style="@style/FoodDataSubtitleStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLabelData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvCarbohydrates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carbohydrates"/>
+
+                <TextView
+                    android:id="@+id/tvNumCarbohydrates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvFat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fat"/>
+
+                <TextView
+                    android:id="@+id/tvNumFat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvProtein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/protein"/>
+
+                <TextView
+                    android:id="@+id/tvNumProtein"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvSugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sugar"/>
+
+                <TextView
+                    android:id="@+id/tvNumSugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvSalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salt"/>
+
+                <TextView
+                    android:id="@+id/tvNumSalt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvFiber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiber"/>
+
+                <TextView
+                    android:id="@+id/tvNumFiber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/initialGrams" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/plus_button" />
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginStart="8dp"
+            android:text="@string/add_meal"/>
+    </LinearLayout>
+
+
+
 
 </LinearLayout>
