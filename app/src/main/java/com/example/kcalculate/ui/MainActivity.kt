@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.kcalculate.NewsFragment
-import com.example.kcalculate.PersonalDataFragment
 import com.example.kcalculate.R
 import com.example.kcalculate.RecipeFragment
 import com.example.kcalculate.ui.navigation.NavigationDrawerManager
@@ -44,9 +43,9 @@ class MainActivity : AppCompatActivity(), NavigationDrawerManager.OnSectionListe
         tvSelected.isActivated = true
         tvSelected.setTypeface(Typeface.DEFAULT, Typeface.BOLD)
         tvDisabled1.isActivated = false
-        tvDisabled1.setTypeface(Typeface.DEFAULT, Typeface.BOLD)
+        tvDisabled1.setTypeface(Typeface.DEFAULT, Typeface.NORMAL)
         tvDisabled2.isActivated = false
-        tvDisabled2.setTypeface(Typeface.DEFAULT, Typeface.BOLD)
+        tvDisabled2.setTypeface(Typeface.DEFAULT, Typeface.NORMAL)
     }
 
     private fun setFragment(fragment: Fragment) {

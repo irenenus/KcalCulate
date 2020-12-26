@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     android:clickable="true"
     android:focusable="true"
     android:maxWidth="320dp">
@@ -59,19 +59,19 @@
 
                 <View
                     android:id="@+id/selectorNews"
-                    android:layout_width="4dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:background="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/tvNews"
+                    style="@style/DrawerTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="24dp"
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
-                    android:text="@string/menu_news"
-                    android:textColor="@drawable/selector_drawer_item" />
+                    android:text="@string/menu_news" />
 
             </LinearLayout>
 
@@ -82,9 +82,10 @@
 
                 <View
                     android:id="@+id/selectorPersonalData"
-                    android:layout_width="4dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:visibility="invisible"
+                    android:background="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/tvPersonalData"
@@ -94,7 +95,7 @@
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
                     android:text="@string/menu_personal_data"
-                    android:textColor="@drawable/selector_drawer_item" />
+                    style="@style/DrawerTextStyle" />
 
             </LinearLayout>
 
@@ -105,9 +106,10 @@
 
                 <View
                     android:id="@+id/selectorRecipe"
-                    android:layout_width="4dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary" />
+                    android:visibility="invisible"
+                    android:background="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/tvRecipe"
@@ -117,7 +119,7 @@
                     android:paddingStart="32dp"
                     android:paddingEnd="32dp"
                     android:text="@string/menu_recipes"
-                    android:textColor="@drawable/selector_drawer_item" />
+                    style="@style/DrawerTextStyle" />
 
             </LinearLayout>
 
@@ -156,7 +158,7 @@
                 android:layout_width="1dp"
                 android:layout_height="14dp"
                 android:layout_gravity="center"
-                android:background="@color/colorPrimary" />
+                android:background="@color/black" />
 
             <TextView
                 android:id="@+id/tvSpanish"

@@ -5,10 +5,11 @@ import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.core.content.pm.PackageInfoCompat
+import com.example.kcalculate.R
+import com.example.kcalculate.utils.Constants.Companion.CLASS_TAG
+import com.example.kcalculate.utils.Constants.Companion.LAST_APP_VERSION
+import com.example.kcalculate.utils.Constants.Companion.PREFS_FILENAME
 
-const val PREFS_FILENAME = "com.example.kcalculate.prefs"
-const val LAST_APP_VERSION = "com.example.kcalculate.prefs"
-const val CLASS_TAG = "AppStartUtil"
 enum class AppStart{
     FIRST_TIME, FIRST_TIME_VERSION, NORMAL
 }
@@ -35,7 +36,7 @@ class AppStartUtil (private  val context: Context){
         } catch (e: PackageManager.NameNotFoundException){
             Log.w(
                 CLASS_TAG,
-                "Current app version not available. Assuming nomral app start."
+                context.getString(R.string.error_message_intro)
             )
         }
 
