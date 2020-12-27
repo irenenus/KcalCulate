@@ -25,5 +25,8 @@
     <string name="grams">g</string>
     <string name="kcal">Kcalories</string>
     <string name="add_meal">Add a meal</string>
+    <string name="average">Average:</string>
+    <string name="target">Target:</string>
+    <string name="initial">0</string>
 
 </resources>
