@@ -24,16 +24,16 @@ import java.util.concurrent.TimeUnit
 
 val databaseModule = module {
 
-    fun provideDatabase(application: Application): FoodDataBase? {
-        return FoodDataBase.getDatabase(application.applicationContext)
+    fun provideDatabase(): FoodDataBase? {
+        return FoodDataBase.INSTANCE
     }
 
-    fun provideCountriesDao(database: FoodDataBase): FoodDao {
-        return  database.foodDao()
+    fun provideIngredientsDao(database: FoodDataBase): IngredientsDao {
+        return  database.ingredientDao()
     }
 
-    single { provideDatabase(androidApplication()) }
-    single { provideCountriesDao(get()) }
+    single { provideDatabase() }
+    single { provideIngredientsDao(get()) }
 }
 
 

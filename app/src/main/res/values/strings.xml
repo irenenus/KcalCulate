@@ -29,7 +29,8 @@
     <string name="target">Target:</string>
     <string name="initial">0</string>
     <string name="ingredient">Ingredient</string>
-    <string name="BASE_URL">www.themealdb.com/api/json/v1/1/list.php?i=list</string>
+    <string name="description">Description: </string>
+    <string name="BASE_URL">https://www.themealdb.com/api/json/v1/1/</string>
 
     <!-- Meal Activity -->
     <string-array name="meal_array">

@@ -7,6 +7,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.example.kcalculate.data.daos.FoodDao
+import com.example.kcalculate.data.daos.IngredientsDao
 import com.example.kcalculate.data.entities.FoodEntity
 import com.example.kcalculate.data.entities.IngredientEntity
 
@@ -15,6 +16,7 @@ import com.example.kcalculate.data.entities.IngredientEntity
 abstract class FoodDataBase : RoomDatabase() {
 
     abstract fun foodDao(): FoodDao
+    abstract fun ingredientDao(): IngredientsDao
 
     companion object
     {
