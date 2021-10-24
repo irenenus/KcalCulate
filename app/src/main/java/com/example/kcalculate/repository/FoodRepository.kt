@@ -2,9 +2,9 @@ package com.example.kcalculate.repository
 
 import android.content.Context
 import android.os.AsyncTask
-import com.example.kcalculate.data.FoodDao
+import com.example.kcalculate.data.daos.FoodDao
 import com.example.kcalculate.data.FoodDataBase
-import com.example.kcalculate.data.FoodEntity
+import com.example.kcalculate.data.entities.FoodEntity
 
 class FoodRepository(context: Context) {
 

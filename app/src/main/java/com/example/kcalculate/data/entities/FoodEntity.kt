@@ -1,4 +1,4 @@
-package com.example.kcalculate.data
+package com.example.kcalculate.data.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

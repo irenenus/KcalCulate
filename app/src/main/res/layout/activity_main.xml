@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerLayout"
@@ -44,4 +45,4 @@
             tools:layout="@layout/fragment_navigation_drawer" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
-</layout>
+</LinearLayout>

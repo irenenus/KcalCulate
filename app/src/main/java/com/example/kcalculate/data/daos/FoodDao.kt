@@ -1,6 +1,7 @@
-package com.example.kcalculate.data
+package com.example.kcalculate.data.daos
 
 import androidx.room.*
+import com.example.kcalculate.data.entities.FoodEntity
 
 @Dao
 interface FoodDao {
