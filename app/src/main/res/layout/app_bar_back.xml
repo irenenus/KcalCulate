@@ -6,37 +6,24 @@
     android:paddingTop="0dp"
     app:contentInsetEnd="0dp"
     app:contentInsetStart="0dp"
-    android:elevation="6dp">
+    android:elevation="6dp"
+    android:background="@color/colorPrimary">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/navigation_icon"
+            android:id="@+id/btnBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:layout_marginStart="16dp"
-            android:background="@drawable/ic_menu"
+            android:background="@drawable/ic_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/titleApp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:textSize="22sp"
-            android:fontFamily="@font/baloo"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:text="@string/menu_news"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

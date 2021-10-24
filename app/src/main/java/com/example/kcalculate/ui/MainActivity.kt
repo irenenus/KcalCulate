@@ -14,7 +14,7 @@ import com.example.kcalculate.ui.navigation.NavigationDrawerManager
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_navigation_drawer.*
 
-class MainActivity : AppCompatActivity(), NavigationDrawerManager.OnSectionListener {
+open class MainActivity : AppCompatActivity(), NavigationDrawerManager.OnSectionListener {
 
     private lateinit var navigationDrawerManager: NavigationDrawerManager
     private val fragmentNews = NewsFragment.newInstance()

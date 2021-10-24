@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.kcalculate.R
 import kotlinx.android.synthetic.main.fragment_navigation_drawer.*
 
-class NavigationDrawerFragment: Fragment() {
+class NavigationDrawerFragment : Fragment() {
     private lateinit var listener: OnNavigationDrawerItemClickListener
 
     override fun onCreateView(
@@ -20,11 +20,27 @@ class NavigationDrawerFragment: Fragment() {
         return inflater.inflate(R.layout.fragment_navigation_drawer, container, false)
     }
 
-    fun init(navigationDrawerManager: NavigationDrawerManager){
+    fun init(navigationDrawerManager: NavigationDrawerManager) {
         this.listener = navigationDrawerManager
-        tvNews.setOnClickListener { (listener as NavigationDrawerManager).onNewsClick(context!!) }
-        tvPersonalData.setOnClickListener { (listener as NavigationDrawerManager).onPersonalDataClick(context!!) }
-        tvRecipe.setOnClickListener { (listener as NavigationDrawerManager).onRecipesClick(context!!) }
+        context?.let { context ->
+            tvNews.setOnClickListener {
+                (listener as NavigationDrawerManager).onNewsClick(
+                    context
+                )
+            }
+
+            tvPersonalData.setOnClickListener {
+                (listener as NavigationDrawerManager).onPersonalDataClick(
+                    context
+                )
+            }
+            tvRecipe.setOnClickListener {
+                (listener as NavigationDrawerManager).onRecipesClick(
+                    context
+                )
+            }
+
+        }
 
     }
 

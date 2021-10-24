@@ -9,6 +9,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_news.*
 import java.text.SimpleDateFormat
 import java.util.*
+import android.content.Intent
+import com.example.kcalculate.ui.MealActivity
+
 
 class NewsFragment : Fragment(){
     companion object {
@@ -26,15 +29,22 @@ class NewsFragment : Fragment(){
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        activity!!.progressBar.visibility = View.GONE
+        activity?.progressBar?.visibility = View.GONE
         super.onViewCreated(view, savedInstanceState)
         setView()
+        onListeners()
     }
 
     private fun setView(){
-
-        val sdf = SimpleDateFormat("E, dd MMM yyyy", Locale.ENGLISH)
-        val currentDate = sdf.format(Date())
+        val simpleDateFormat = SimpleDateFormat("E, dd MMM yyyy", Locale.ENGLISH)
+        val currentDate = simpleDateFormat.format(Date())
         tvDate.text = currentDate
+    }
+
+    private fun onListeners(){
+        btnAdd.setOnClickListener {
+            val intent = Intent(context, MealActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

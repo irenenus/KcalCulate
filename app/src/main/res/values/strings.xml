@@ -29,4 +29,13 @@
     <string name="target">Target:</string>
     <string name="initial">0</string>
 
+    <!-- Meal Activity -->
+    <string-array name="meal_array">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snacks</item>
+        <item>Brunch</item>
+    </string-array>
+
 </resources>

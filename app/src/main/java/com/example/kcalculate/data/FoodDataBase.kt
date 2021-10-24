@@ -15,7 +15,7 @@ abstract class FoodDataBase : RoomDatabase() {
         //SINGLETON
         var INSTANCE: FoodDataBase? = null
 
-        fun getDatabase(context: Context): FoodDataBase {
+        fun getDatabase(context: Context): FoodDataBase? {
             if (INSTANCE == null) {
                 synchronized(FoodDataBase::class.java) {
                     if (INSTANCE == null) {
@@ -25,7 +25,7 @@ abstract class FoodDataBase : RoomDatabase() {
                     }
                 }
             }
-            return INSTANCE!!
+            return INSTANCE
         }
 
         fun destroyInstance() {
