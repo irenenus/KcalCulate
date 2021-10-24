@@ -18,4 +18,7 @@ interface FoodDao {
 
     @Query("DELETE FROM tb_food")
     fun deleteAll()
+
+    @Query("SELECT * FROM tb_food")
+    fun getAll(): List<FoodEntity>
 }
