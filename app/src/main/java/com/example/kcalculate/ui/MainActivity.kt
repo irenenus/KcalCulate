@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import com.example.kcalculate.NewsFragment
 import com.example.kcalculate.R
 import com.example.kcalculate.RecipeFragment
 import com.example.kcalculate.ui.navigation.NavigationDrawerManager

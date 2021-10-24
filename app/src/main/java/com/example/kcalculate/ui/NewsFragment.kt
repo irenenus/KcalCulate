@@ -1,4 +1,4 @@
-package com.example.kcalculate
+package com.example.kcalculate.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,12 +10,12 @@ import kotlinx.android.synthetic.main.fragment_news.*
 import java.text.SimpleDateFormat
 import java.util.*
 import android.content.Intent
-import com.example.kcalculate.ui.MealActivity
+import com.example.kcalculate.R
 
 
 class NewsFragment : Fragment(){
     companion object {
-        fun newInstance(): NewsFragment{
+        fun newInstance(): NewsFragment {
             return NewsFragment()
         }
     }
