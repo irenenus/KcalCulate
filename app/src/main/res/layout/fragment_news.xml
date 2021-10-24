@@ -235,7 +235,7 @@
         android:layout_margin="12dp"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:id="@+id/btnAdd"
             android:layout_width="64dp"
             android:layout_height="64dp"

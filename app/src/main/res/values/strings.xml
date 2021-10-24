@@ -28,6 +28,7 @@
     <string name="average">Average:</string>
     <string name="target">Target:</string>
     <string name="initial">0</string>
+    <string name="ingredient">Ingredient</string>
 
     <!-- Meal Activity -->
     <string-array name="meal_array">

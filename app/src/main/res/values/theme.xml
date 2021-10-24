@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textColorPrimary">@color/dark_grey</item>
+        <!--        <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>-->
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/light_grey</item>
+        <item name="colorControlNormal">@color/light_grey</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/light_grey</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Home" />
+
+    <style name="AppTheme.SplashTheme" parent="IntroActivityTheme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+
+    <style name="FullscreenThemeNew" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="colorAccent">@color/dark_grey</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="textInputStyle">@style/CustomFontTextInputLayout</item>
+    </style>
+
+    <style name="IntroActivityTheme" parent="FullscreenThemeNew">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="LoginActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="colorAccent">@color/dark_grey</item>
+        <item name="colorPrimary">@color/dark_grey</item>
+    </style>
+
+    <style name="OnBoardingTheme" parent="FullscreenThemeNew">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="VerifyEmailTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="colorAccent">@color/mid_grey</item>
+        <item name="colorPrimary">@color/mid_grey</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- Button Style application theme. -->
+    <style name="ButtonStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/baloo</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Drawer's Text -->
+    <style name="DrawerTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@drawable/selector_drawer_item</item>
+    </style>
+
+    <!-- Food Data Text -->
+    <style name="FoodDataTitleStyle">
+        <item name="android:fontFamily">@font/baloo</item>
+        <item name="android:textSize">31sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="FoodDataSubtitleStyle">
+        <item name="android:fontFamily">@font/baloo</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <!-- TextInputLayout & TextInputEditText -->
+    <style name="TextInputLayout.OutlineBox.CustomFont" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:theme">@style/ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont</item>
+        <item name="colorError">@color/red_error</item>
+        <item name="colorAccent">@color/dark_grey</item>
+        <item name="colorPrimary">@color/dark_grey</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+
+    </style>
+
+    <style name="ThemeOverlay.TextInputEditText.OutlinedBox.CustomFont" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="editTextStyle">@style/TextInputEditText.OutlinedBox.CustomFont</item>
+        <item name="errorTextAppearance">@style/TextInputLayoutErrorText</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconDrawable">@drawable/ic_cancel</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="colorError">@color/red_error</item>
+    </style>
+
+    <style name="TextInputEditText.OutlinedBox.CustomFont" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="CustomFontTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextAppearance">@style/TextInputLayoutHintText</item>
+        <item name="helperTextTextAppearance">@style/TextInputLayoutHelperText</item>
+        <item name="errorTextAppearance">@style/TextInputLayoutErrorText</item>
+    </style>
+
+    <style name="TextInputLayoutHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="colorControlActivated">@color/dark_grey</item>
+        <item name="colorControlHighlight">@color/dark_grey</item>
+    </style>
+
+    <style name="TextInputLayoutHelperText" parent="TextAppearance.Design.HelperText">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="TextInputLayoutErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/red_error</item>
+        <item name="colorError">@color/red_error</item>
+    </style>
+
+    <!-- DIALOG -->
+    <style name="AlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/dark_grey</item>
+        <item name="colorPrimary">@color/dark_grey</item>
+        <item name="android:textColorPrimary">@color/dark_grey</item>
+        <item name="android:editTextColor">@color/dark_grey</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="dialogCornerRadius">10dp</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/dark_grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <!-- TEXTS -->
+    <style name="textInputBoxes">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="textEditBoxes">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:backgroundTint">@color/light_grey</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+</resources>
